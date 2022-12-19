@@ -1,5 +1,6 @@
 # Visualization of San Francisco Payroll
-#### Live App:https://san-francisco-payroll-visualization.onrender.com/
+#### Live App Server 1:https://san-francisco-payroll-visualization.onrender.com/
+#### Live App Server 2:https://dashapp-mknmzn5f2a-pd.a.run.app/
 
 ### DATA LINK
 https://raw.githubusercontent.com/Bravelion2017/Dash/main/san-francisco-payroll_2011-2019.csv
