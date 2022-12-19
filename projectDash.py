@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
-from chart_studio import plotly
+#from chart_studio import plotly
 import scipy
 import os
 from tabulate import tabulate
