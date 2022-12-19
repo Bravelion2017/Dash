@@ -106,10 +106,11 @@ United States,\n with respect to different Job titles,\n
 status are going to be analyzed with visual representation.
  """
 #=======================================================
-PATH = pathlib.path(__file__).parent
-DATA_PATH = PATH.joinpath("data").resolve()
-df= pd.read_csv(DATA_PATH.joinpath("san-francisco-payroll_2011-2019.csv"),low_memory=False)
+#PATH = pathlib.path(__file__).parent
+#DATA_PATH = PATH.joinpath("data").resolve()
+#df= pd.read_csv(DATA_PATH.joinpath("san-francisco-payroll_2011-2019.csv"),low_memory=False)
 #path="C:/Users/oseme/Desktop/Data Visualization Class/Project/"
+df= pd.read_csv("https://raw.githubusercontent.com/Bravelion2017/Dash/main/san-francisco-payroll_2011-2019.csv",low_memory=False)
 #df= pd.read_csv("san-francisco-payroll_2011-2019.csv",low_memory=False)
 
 #==cleaning
@@ -605,7 +606,9 @@ def update(a,b):
 # Please Note: host='127.0.0.1' works for me else host='0.0.0.0' Thank you.
 if __name__ == '__main__':
     my_app.run_server(
-        debug = True
+        debug = True,
+        host= '0.0.0.0',
+        port= 8080
     )
 
 #df_clean[df_clean['Job Title']=="Electrical Transit System Mech"][cat2].sum()
