@@ -1,5 +1,8 @@
 # Visualization of San Francisco Payroll
 
+### DATA LINK
+https://raw.githubusercontent.com/Bravelion2017/Dash/main/san-francisco-payroll_2011-2019.csv
+
 ### TO RUN THE CODE:
 
 PLEASE HAVE THE DATASET IN THE SAME FOLDER AS 
