@@ -1,4 +1,5 @@
 #===========================================
+import pathlib
 import random
 import numpy as np
 import pandas as pd
@@ -105,8 +106,11 @@ United States,\n with respect to different Job titles,\n
 status are going to be analyzed with visual representation.
  """
 #=======================================================
+PATH = pathlib.path(__file__).parent
+DATA_PATH = PATH.joinpath("data").resolve()
+df= pd.read_csv(DATA_PATH.joinpath("san-francisco-payroll_2011-2019.csv"),low_memory=False)
 #path="C:/Users/oseme/Desktop/Data Visualization Class/Project/"
-df= pd.read_csv("san-francisco-payroll_2011-2019.csv",low_memory=False)
+#df= pd.read_csv("san-francisco-payroll_2011-2019.csv",low_memory=False)
 
 #==cleaning
 df['Status'].fillna(value=df['Status'].mode()[0],inplace=True)
